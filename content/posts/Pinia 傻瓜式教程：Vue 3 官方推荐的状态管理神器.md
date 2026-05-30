@@ -1,6 +1,6 @@
 ---
 title: "Pinia 傻瓜式教程：Vue 3 官方推荐的状态管理神器"
-date: 2026-05-30T22:00:00+08:00
+date: 2026-05-30T13:00:00+08:00
 draft: false
 images: ["/images/post/pinia-guide.jpg"]
 tags: ["Vue3", "Pinia", "状态管理", "前端开发"]

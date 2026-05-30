@@ -2,7 +2,7 @@
 baseURL = "http://101.200.235.216:81"  # 替换为你的博客地址（部署后生效）
 languageCode = "zh-CN"                   # 中文支持
 defaultContentLanguage = "zh-cn"         # DoIt 额外需要，FixIt 可省略
-title = "我的技术博客"                    # 博客标题
+title = "代码与回路"                    # 博客标题
 theme = "FixIt"                          # 启用 FixIt 主题，DoIt 替换为 "DoIt"
 enableRobotsTXT = true                   # 允许搜索引擎抓取
 hasCJKLanguage = true                    # 启用中日韩文字支持（中文必开）
@@ -20,31 +20,44 @@ enableGitInfo = false
 
 # 菜单配置（科技博客常用菜单）
 [menu]
+  # 1. 首页
   [[menu.main]]
     identifier = "home"
     name = "首页"
     url = "/"
     weight = 1
+
+  # 2. 将文章按大类聚合，引导流量
   [[menu.main]]
-    identifier = "posts"
-    name = "技术文章"
-    url = "/posts/"
+    identifier = "dev"
+    name = "前端开发"
+    url = "/categories/前端开发/"
     weight = 2
+
   [[menu.main]]
-    identifier = "tags"
-    name = "标签"
-    url = "/tags/"
+    identifier = "ops"
+    name = "运维技术"
+    url = "/categories/运维技术/"
     weight = 3
+
+  [[menu.main]]
+    identifier = "ind"
+    name = "工业自动化"
+    url = "/categories/工业自动化/"
+    weight = 4
+
+  # 3. 工具类入口
   [[menu.main]]
     identifier = "categories"
-    name = "分类"
+    name = "所有分类"
     url = "/categories/"
-    weight = 4
+    weight = 5
+    
   [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
-    weight = 5
+    weight = 6
 
 # 主题核心参数（FixIt / DoIt 通用，适配科技博客）
 [params]
