@@ -4,7 +4,7 @@ date: 2026-05-30T12:01:00+08:00
 draft: false
 images: ["/images/post/grid-layout-guide.jpg"]
 tags: ["CSS", "Grid", "布局", "前端开发"]
-categories: ["CSS"]
+categories: ["前端开发", "CSS"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "如果说 Flex 是排队（一维），那么 Grid 就是下棋（二维）。CSS Grid 是网页布局中最强大的系统，它能让你轻松搞定复杂的网格结构。本文将带你从零开始，掌握网格布局的核心奥秘。"

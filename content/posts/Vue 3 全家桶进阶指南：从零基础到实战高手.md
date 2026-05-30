@@ -4,7 +4,7 @@ date: 2026-05-30T12:30:00+08:00
 draft: false
 images: ["/images/post/vue3-complete-guide.jpg"]
 tags: ["Vue3", "JavaScript", "前端框架", "Composition API"]
-categories: ["Vue"]
+categories: ["前端开发", "Vue"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "Vue 3 已经成为前端开发的主流选择。本文将带你从零开始，系统掌握 Vue 3 的核心概念、Composition API、组件通信、生命周期，以及 Vue Router 和 Pinia 等全家桶工具，助你快速上手现代前端开发。"

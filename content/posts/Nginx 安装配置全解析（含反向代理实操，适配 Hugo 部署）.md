@@ -4,7 +4,7 @@ date: 2026-04-23T06:00:00+08:00
 draft: false
 images: ["/images/post/nginx-install-config-tutorial.jpg"]
 tags: ["Linux", "Nginx", "反向代理", "Hugo 部署", "Rocky Linux", "Web 服务器"]
-categories: ["Linux 教程"]
+categories: ["运维技术", "服务器"]
 series: ["Linux 运维系列"]
 author: "GW"
 summary: "本文详细讲解 Nginx 在 Rocky Linux 环境下的两种安装方式、核心配置解析、虚拟主机配置，重点拆解反向代理原理与实操（适配 Hugo 博客、后端接口等场景），包含常见问题排查，新手也能快速上手。"

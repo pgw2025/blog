@@ -5,7 +5,7 @@ date: 2026-04-22T12:30:00+08:00
 draft: false
 images: ["/images/post/journalctl-tutorial.jpg"]
 tags: ["Linux", "journalctl", "日志排查", "Systemd", "运维"]
-categories: ["Linux 教程"]
+categories: ["运维技术", "Linux"]
 series: ["Linux 运维系列"]
 author: "GW"
 summary: "本文详细讲解 journalctl 命令的使用方法，涵盖日志查看、筛选、过滤、导出等核心操作，结合 Systemd 服务日志排查实操，新手也能快速掌握 Linux 日志排查技巧。"

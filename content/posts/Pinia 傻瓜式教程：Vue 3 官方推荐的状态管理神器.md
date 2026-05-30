@@ -4,7 +4,7 @@ date: 2026-05-30T22:00:00+08:00
 draft: false
 images: ["/images/post/pinia-guide.jpg"]
 tags: ["Vue3", "Pinia", "状态管理", "前端开发"]
-categories: ["Vue"]
+categories: ["前端开发", "Vue"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "当组件之间传参让你头大时，你需要一个“共享大仓库”。Pinia 是 Vue 3 的官方状态管理库，它不仅极其轻量，而且用起来就像写普通的 Vue 组件一样简单。本文将带你从零开始，彻底玩转 Pinia。"

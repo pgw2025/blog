@@ -3,7 +3,7 @@ title: "Linux 常用命令汇总（新手必备）"  # 文章标题
 date: 2026-04-21T17:00:00+08:00        # 发布时间
 draft: false                             # 设为 false 才会发布
 tags: ["Linux", "运维", "命令行"]        # 标签（科技博客分类用）
-categories: ["技术教程"]                 # 分类
+categories: ["运维技术", "Linux"]
 series: ["Linux 学习系列"]               # 系列文章（FixIt 推荐，DoIt 也支持）
 ---
 # Linux 常用命令用法汇总（新手必备）

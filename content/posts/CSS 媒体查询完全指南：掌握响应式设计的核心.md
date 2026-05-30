@@ -4,7 +4,7 @@ date: 2026-05-30T12:09:00+08:00
 draft: false
 images: ["/images/post/media-queries-guide.jpg"]
 tags: ["CSS", "媒体查询", "响应式设计", "前端开发"]
-categories: ["CSS"]
+categories: ["前端开发", "CSS"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "同一个网页，如何在手机上纵向排列，在电脑上横向并排？媒体查询就是那个让网页“看人下菜碟”的魔法。本文将带你彻底搞清楚 Mobile-First（移动端优先）与 Desktop-First（桌面端优先）策略，分清 min-width 与 max-width 的使用逻辑。"

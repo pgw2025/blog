@@ -4,7 +4,7 @@ date: 2026-04-22T13:00:00+08:00
 draft: false
 images: ["/images/post/hugo-complete-tutorial.jpg"]
 tags: ["Hugo", "静态博客", "博客搭建", "部署优化", "Linux"]
-categories: ["Hugo 教程"]
+categories: ["前端开发", "Hugo"]
 series: ["Linux 运维系列"]
 author: "你的名字"
 summary: "本文从 Hugo 基础搭建、主题配置、文章创作、静态部署，到进阶优化（缓存、加速、个性化），全程实操可复制，适配 Hugo v0.160.1 版本，新手也能快速搭建并优化自己的静态博客。"
@@ -197,7 +197,7 @@ date: 2026-04-23T10:30:00+08:00        # 发布时间（自动生成，可修改
 draft: false                             # 设为 false 才会发布（true 为草稿）
 images: ["/images/post/文章封面.jpg"]    # 文章封面（放在 static/images/post/ 目录）
 tags: ["Linux", "journalctl", "日志排查"] # 文章标签（多个标签用逗号分隔）
-categories: ["Linux 教程"]               # 文章分类
+categories: ["运维技术", "Linux"]               # 文章分类
 series: ["Linux 运维系列"]               # 系列文章（FixIt/DoIt 均支持）
 author: "你的名字"                      # 作者名称
 summary: "文章摘要（简要说明文章内容，首页显示）"

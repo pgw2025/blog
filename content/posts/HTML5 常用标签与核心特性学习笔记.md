@@ -4,7 +4,7 @@ date: 2026-05-30T11:30:00+08:00
 draft: false
 images: ["/images/post/html5-tags-guide.jpg"]
 tags: ["HTML5", "前端开发", "学习笔记", "网页开发"]
-categories: ["HTML"]
+categories: ["前端开发", "HTML"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "本文详细整理了 HTML5 常用标签及其使用说明，重点介绍了表单基础（含文件上传）、新增语义化标签、多媒体标签及表单增强特性，适合前端初学者及开发者查阅复习。"

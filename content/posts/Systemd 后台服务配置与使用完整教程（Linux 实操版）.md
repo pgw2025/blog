@@ -4,7 +4,7 @@ date: 2026-04-22T10:00:00+08:00
 draft: false
 images: ["/images/post/Systemd 后台服务配置与使用完整教程.png"]
 tags: ["Linux", "Systemd", "后台服务", "运维"]
-categories: ["Linux 教程"]
+categories: ["运维技术", "Linux"]
 series: ["Linux 运维系列"]
 author: "GW"
 summary: "本文手把手教你配置 Systemd 后台服务，涵盖配置文件编写、服务管理命令、Hugo 服务实操示例及常见问题排查，全程可复制，新手也能快速上手。"

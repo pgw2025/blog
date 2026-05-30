@@ -4,7 +4,7 @@ date: 2026-05-30T12:50:00+08:00
 draft: false
 images: ["/images/post/vue-router-guide.jpg"]
 tags: ["Vue3", "Vue Router", "前端开发", "单页应用"]
-categories: ["Vue"]
+categories: ["前端开发", "Vue"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "单页应用 (SPA) 为什么能像原生 App 一样流畅跳转？这全靠路由系统。本文将深度解析 Vue Router 4 的安装创建、工作模式、嵌套路由设计，以及技巧与注意事项，助你构建复杂的页面结构。"

@@ -4,7 +4,7 @@ date: 2026-05-30T12:15:00+08:00
 draft: false
 images: ["/images/post/css-animation-guide.jpg"]
 tags: ["CSS", "动画", "过渡", "前端开发"]
-categories: ["CSS"]
+categories: ["前端开发", "CSS"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "静止的网页是无聊的。CSS 的过渡（Transition）和动画（Animation）能为你的网页注入灵魂。本文将通俗易懂地讲解两者的区别、所有核心属性，以及如何写出丝滑顺畅的视觉效果。"

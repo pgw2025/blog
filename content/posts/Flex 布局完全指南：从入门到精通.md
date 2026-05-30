@@ -4,7 +4,7 @@ date: 2026-05-30T12:00:00+08:00
 draft: false
 images: ["/images/post/flexbox-guide.jpg"]
 tags: ["CSS", "Flexbox", "布局", "前端开发"]
-categories: ["CSS"]
+categories: ["前端开发", "CSS"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "还在为垂直居中发愁吗？Flex 布局（弹性盒子）是现代网页布局的终极利器。本文将通过通俗易懂的图解方式，带你深入掌握 Flex 容器与项目的核心属性，告别复杂的浮动布局。"

@@ -4,7 +4,7 @@ date: 2026-05-30T11:50:00+08:00
 draft: false
 images: ["/images/post/css3-features-guide.jpg"]
 tags: ["CSS3", "前端开发", "学习笔记", "样式设计"]
-categories: ["CSS"]
+categories: ["前端开发", "CSS"]
 series: ["前端开发系列"]
 author: "GW"
 summary: "本文系统整理了 CSS3 的核心特性，包括盒子模型、浮动与定位、Flex 布局、Grid 布局，以及 CSS3 新增的过渡、动画、变形及变量等现代开发必备技巧。"

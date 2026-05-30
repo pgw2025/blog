@@ -4,7 +4,7 @@ date: 2026-04-22T20:37:00+08:00
 draft: false
 images: ["/images/post/yum-repo-tutorial.jpg"]
 tags: ["Linux", "Yum", "Yum源", "Rocky Linux", "软件安装"]
-categories: ["Linux 教程"]
+categories: ["运维技术", "Linux"]
 series: ["Linux 运维系列"]
 author: "你的名字"
 summary: "本文详细讲解 Yum 源的核心概念、默认源缺陷、国内源（阿里云、华为云）配置方法，以及 Yum 源管理、故障排查技巧，全程实操可复制，解决软件安装慢、安装失败问题。"
