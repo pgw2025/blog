@@ -77,36 +77,112 @@ npm install @microsoft/signalr
 
 ### 2. 建立连接并监听
 ```javascript
-import * as signalR from "@microsoft/signalr";
+import * as SingnelR from '@microsoft/signalr';
+import { onMounted, onUnmounted, ref } from 'vue';
+// 定义一个函数useSingnelR，接受一个参数hubUrl，表示SignalR连接的URL
+// 返回一个对象，包含connection和sendMessage方法
+// connection是SignalR连接实例，sendMessage是发送消息到服务器的方法
+// 在组件挂载时初始化SignalR连接，在组件卸载时停止连接
+// 使用onMounted和onUnmounted生命周期钩子来管理SignalR连接的生命周期
+export function useSingnelR(hubUrl: string) {
+    // 创建一个ref来存储SignalR连接实例
+    const connection = ref<SingnelR.HubConnection | null>(null);
+    // 创建一个ref来存储接收到的消息数据数组
+    const receivedData = ref<string | "">("");
 
-// 1. 创建连接对象
-const connection = new signalR.HubConnectionBuilder()
-    .withUrl("http://你的服务器地址/chathub")
-    .withAutomaticReconnect() // 自动重连黑科技
-    .build();
+    // 初始化SignalR连接的方法
+    const initSignalR = async () => {
+        // 创建SignalR连接
+        connection.value = new SingnelR.HubConnectionBuilder()
+            .withUrl(hubUrl, {
+                // 跳过协商直接使用WebSocket
+                skipNegotiation: true,
+                transport: SingnelR.HttpTransportType.WebSockets
+            })
+            .withAutomaticReconnect()
+            .build();
+        // 连接成功后，监听消息事件
+        //第一个参数'ReceiveMessage'是服务器端发送的消息放的的第一个参数名，data是接收到的消息数据
+        connection.value.on('ReceiveMessage', (data) => {
+            // 将接收到的消息数据存储到receivedData中
+            // 并在控制台中输出接收到的消息数据
+            receivedData.value = data;
+            console.log('Received message:', data);
+        });
 
-// 2. 监听服务器推过来的消息
-connection.on("ReceiveMessage", (user, message) => {
-    console.log(`${user} 说: ${message}`);
-});
+        // 启动连接
+        try {
+            await connection.value.start();
+            console.log('Connection Server:' + hubUrl + ' connected successfully');
+        } catch (error) {
+            console.error('Error starting connection:', error);
 
-// 3. 启动连接
-async function start() {
-    try {
-        await connection.start();
-        console.log("SignalR 连接成功！");
-    } catch (err) {
-        setTimeout(start, 5000); // 失败了 5 秒后重试
+        }
+
+
     }
-}
+    // 在组件挂载时初始化SignalR连接，在组件卸载时停止连接
+    // 使用onMounted和onUnmounted生命周期钩子来管理SignalR连接的生命周期
+    onMounted(() => {
+        console.log("已经挂载开始初始化SignalR...");
 
-// 4. 发送消息给服务器
-async function send(user, msg) {
-    await connection.invoke("SendMessage", user, msg);
+        initSignalR();
+    });
+    // 在组件卸载时停止SignalR连接，避免内存泄漏
+    // 使用onUnmounted生命周期钩子来管理SignalR连接的生命周期
+    onUnmounted(() => {
+        console.log("已经卸载停止SignalR...");
+        if (connection.value) {
+            connection.value.stop();
+            console.log('SignalR Connection stopped');
+        }
+    });
+    // 提供一个方法来发送消息到服务器
+    // 使用connection.value.invoke方法来调用服务器端的方法
+    // 参数methodName是服务器端方法的名称，...args是服务器端方法的参数数组
+    const sendMessage = async (methodName: string, ...args: any[]) => {
+        if (connection.value) {
+            await connection.value.invoke(methodName, ...args);
+        }
+    }
+
+    // 返回一个对象，包含connection和sendMessage方法
+    // 这样可以在组件中使用这些方法和属性
+    return {
+        receivedData,
+        sendMessage
+    };
+
 }
 ```
 
----
+### 3. 在组件中使用
+```vue
+<script setup lang="ts">
+//引用SingnelR
+import { useSingnelR } from '@/api/SingnelR'
+import { ref } from 'vue';
+//定义SingnelR的接收和发送方法
+const { receivedData, sendMessage } = useSingnelR("http://localhost:5250/chat")
+const message = ref('')
+
+</script>
+
+<template>
+  <div>
+    <h1>SingnelR Demo</h1>
+    <input type="text" v-model="message" placeholder="Type a message" />
+    <!-- 发送消息按钮  -->
+    <button @click="sendMessage('SendMessage', message)">Send</button>
+    <div v-if="receivedData">
+      <h2>Received Data:</h2>
+      <pre>{{ receivedData }}</pre>
+    </div>
+  </div>
+</template>
+
+<style scoped></style>
+```
 
 ## 五、 使用技巧与高级玩法
 
