@@ -1,0 +1,87 @@
+# 基础配置（FixIt / DoIt 通用）
+baseURL = "http://101.200.235.216:81"  # 替换为你的博客地址（部署后生效）
+languageCode = "zh-CN"                   # 中文支持
+defaultContentLanguage = "zh-cn"         # DoIt 额外需要，FixIt 可省略
+title = "我的技术博客"                    # 博客标题
+theme = "FixIt"                          # 启用 FixIt 主题，DoIt 替换为 "DoIt"
+enableRobotsTXT = true                   # 允许搜索引擎抓取
+hasCJKLanguage = true                    # 启用中日韩文字支持（中文必开）
+paginate = 10                            # 每页文章数
+enableGitInfo = false
+
+# 语法高亮（科技博客必配，适配代码显示）
+[markup]
+  [markup.highlight]
+    noClasses = false                     # 必须设为 false，否则代码高亮异常
+    codeFences = true
+    guessSyntax = true
+    lineNos = true                       # 显示代码行号
+    lineNumbersInTable = true
+
+# 菜单配置（科技博客常用菜单）
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "技术文章"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 4
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 5
+
+# 主题核心参数（FixIt / DoIt 通用，适配科技博客）
+[params]
+  # 基础信息 —— 已修复为 map 格式，解决报错
+  [params.author]
+    name = "GW"
+    url = ""
+    email = ""
+  
+  description = "分享编程技术、Linux 运维、开发笔记的个人博客"  # 博客描述（SEO 用）
+  defaultTheme = "auto"                   # 自动切换深色/浅色模式
+  enableToTop = true                      # 回到顶部按钮
+  enableSearch = true                     # 开启搜索功能（科技博客必备）
+  enableLightGallery = true               # 图片灯箱预览（插入技术截图方便）
+  rssLimit = 100
+
+  # 首页配置（优化科技博客展示）
+  [params.home]
+    subtitle = "专注技术，记录成长 | 代码改变世界"  # 首页副标题
+    postListMode = "detailed"             # 文章卡片显示摘要+封面（推荐）
+    enableFeatured = true                 # 显示置顶文章
+
+  # 文章页配置（提升阅读体验）
+  [params.page]
+    cover = true  # 确保开启封面显示（默认true，若为false则改为true）
+    [params.page.toc]
+      enable = true                       # 显示文章目录（长教程必备）
+      auto = true
+    [params.page.code]
+      copy = true                         # 代码块复制按钮（科技博客必开）
+      maxShownLines = 30                  # 代码块默认显示行数
+
+  # 个人信息（可选，显示在首页）
+  [params.profile]
+    avatar = "/images/avatar.jpg"         # 头像（放入 static/images/ 目录）
+    bio = "程序员 / 运维工程师 / 终身学习者"
+    [params.profile.social]
+      GitHub = "你的GitHubID"             # 科技博主常用社交账号
+      Email = "你的邮箱"
+      Bilibili = "你的B站ID"
