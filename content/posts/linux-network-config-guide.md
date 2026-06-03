@@ -3,7 +3,7 @@ title: "Linux 网络配置全攻略：手动设置 IP、子网掩码与网关"
 date: 2026-06-03T12:00:00+08:00
 draft: false
 tags: ["Linux", "网络配置", "运维", "IP设置"]
-categories: ["Linux 运维系列", "系统管理"]
+categories: ["运维技术"]
 author: "Will"
 summary: "换了服务器连不上网？想给 Linux 设个固定 IP？本文手把手教你如何通过命令行设置 IP、子网掩码、网关和 DNS，涵盖临时生效与永久生效的多种方法。"
 ---
