@@ -1,6 +1,6 @@
 ---
 title: "Vue 3 路由系统全解析：从基础跳转到高级传参"
-date: 2026-05-30T12:50:00+08:00
+date: 2026-05-31T08:30:00+08:00
 draft: false
 images: ["/images/post/vue-router-guide.jpg"]
 tags: ["Vue3", "Vue Router", "前端开发", "单页应用"]
