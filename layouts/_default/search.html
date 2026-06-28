@@ -1,0 +1,25 @@
+{{ define "content" }}
+
+<div class="page search-page">
+    <h1>{{ .Title }}</h1>
+
+    <div id="search"></div>
+</div>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+
+<script src="/pagefind/pagefind-ui.js"></script>
+
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    new PagefindUI({
+        element: "#search",
+        showImages: true,
+        showSubResults: true,
+        excerptLength: 30,
+        autofocus: true
+    });
+});
+</script>
+
+{{ end }}

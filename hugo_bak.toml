@@ -1,19 +1,13 @@
 # 基础配置（FixIt / DoIt 通用）
-baseURL = "https://101.200.235.216:2121"  # 替换为你的博客地址（部署后生效）
+baseURL = "https://101.200.235.216:81"  # 替换为你的博客地址（部署后生效）
 languageCode = "zh-CN"                   # 中文支持
 defaultContentLanguage = "zh-cn"         # DoIt 额外需要，FixIt 可省略
-title = "赛博工匠"                     # 博客标题
+title = "赛博工匠"                    # 博客标题
 theme = "FixIt"                          # 启用 FixIt 主题，DoIt 替换为 "DoIt"
 enableRobotsTXT = true                   # 允许搜索引擎抓取
 hasCJKLanguage = true                    # 启用中日韩文字支持（中文必开）
 paginate = 10                            # 每页文章数
 enableGitInfo = false
-
-# ==================== 【1. 新增搜索配置：指定输出格式】 ====================
-# 指导 Hugo 在编译时生成 index.json 文件，这是搜索功能的数据源
-#[outputs]
-#  home = ["HTML", "RSS", "JSON"]
-# =========================================================================
 
 # 语法高亮（科技博客必配，适配代码显示）
 [markup]
@@ -81,18 +75,11 @@ enableGitInfo = false
     email = ""
   
   description = "分享编程技术、Linux 运维、开发笔记的个人博客"  # 博客描述（SEO 用）
-  defaultTheme = "auto"                    # 自动切换深色/浅色模式
-  enableToTop = true                       # 回到顶部按钮
-  enableSearch = true                      # 开启搜索功能（科技博客必备）
-  enableLightGallery = true                # 图片灯箱预览（插入技术截图方便）
+  defaultTheme = "auto"                   # 自动切换深色/浅色模式
+  enableToTop = true                      # 回到顶部按钮
+  enableSearch = true                     # 开启搜索功能（科技博客必备）
+  enableLightGallery = true               # 图片灯箱预览（插入技术截图方便）
   rssLimit = 100
-
-  # ==================== 【2. 新增搜索配置：Lunr 搜索引擎参数】 ====================
-  # 本地 Lunr 搜索，开箱即用，无需配置云端 API 
-  [params.search]
-    enable = false
-
-  # =========================================================================
 
   # 首页配置（优化科技博客展示）
   [params.home]
