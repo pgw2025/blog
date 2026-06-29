@@ -5,7 +5,7 @@ draft: false
 math: true
 images: ["/images/post/ohms-law.jpg"]
 tags: ["工业自动化", "电工基础", "欧姆定律", "硬件调试"]
-categories: ["工业自动化"]
+categories: ["工业自动化","电工"]
 series: ["工业自动化入门"]
 author: "GW"
 summary: "欧姆定律不仅仅是物理课本上的公式，它是整个工业自动化与电子世界的基石。本文通过生动的水流比喻，带你彻底搞懂电压、电流、电阻之间的关系，并教你如何用它解决变频器调试中的实际问题。"

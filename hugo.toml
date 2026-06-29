@@ -6,8 +6,10 @@ title = "赛博工匠"                     # 博客标题
 theme = "FixIt"                          # 启用 FixIt 主题，DoIt 替换为 "DoIt"
 enableRobotsTXT = true                   # 允许搜索引擎抓取
 hasCJKLanguage = true                    # 启用中日韩文字支持（中文必开）
-paginate = 10                            # 每页文章数
 enableGitInfo = false
+[pagination]
+pagerSize = 15                          # 每页文章数
+
 
 # ==================== 【1. 新增搜索配置：指定输出格式】 ====================
 # 指导 Hugo 在编译时生成 index.json 文件，这是搜索功能的数据源
@@ -31,21 +33,67 @@ enableGitInfo = false
         block = [['\[', '\]'], ['$$', '$$']]
         inline = [['\(', '\)'], ['$', '$']]
 
-# 菜单配置（科技博客常用菜单）
 [menu]
-  # 1. 首页
+
+  # ======================
+  # 首页
+  # ======================
+
   [[menu.main]]
     identifier = "home"
     name = "首页"
     url = "/"
     weight = 1
 
-  # 2. 将文章按大类聚合，引导流量
+  [menu.main.params]
+    icon = "fas fa-house"
+
+  # ======================
+  # 前端开发
+  # ======================
+
   [[menu.main]]
     identifier = "dev"
     name = "前端开发"
     url = "/categories/前端开发/"
     weight = 2
+
+  [menu.main.params]
+    icon = "fas fa-laptop-code"
+
+  # Vue
+  [[menu.main]]
+    name = "Vue"
+    parent = "dev"
+    url = "/categories/vue/"
+    weight = 1
+
+  [menu.main.params]
+    icon = "fab fa-vuejs"
+
+  # HTML
+  [[menu.main]]
+    name = "HTML"
+    parent = "dev"
+    url = "/categories/html/"
+    weight = 2
+
+  [menu.main.params]
+    icon = "fab fa-html5"
+
+  # CSS
+  [[menu.main]]
+    name = "CSS"
+    parent = "dev"
+    url = "/categories/css/"
+    weight = 3
+
+  [menu.main.params]
+    icon = "fab fa-css3-alt"
+
+  # ======================
+  # 运维技术
+  # ======================
 
   [[menu.main]]
     identifier = "ops"
@@ -53,25 +101,120 @@ enableGitInfo = false
     url = "/categories/运维技术/"
     weight = 3
 
+  [menu.main.params]
+    icon = "fas fa-server"
+
+  # Linux
+  [[menu.main]]
+    name = "Linux"
+    parent = "ops"
+    url = "/categories/linux/"
+    weight = 1
+
+  [menu.main.params]
+    icon = "fab fa-linux"
+
+  # MySQL
+  [[menu.main]]
+    name = "MySQL"
+    parent = "ops"
+    url = "/categories/mysql/"
+    weight = 2
+
+  [menu.main.params]
+    icon = "fas fa-database"
+
+  # 网络
+  [[menu.main]]
+    name = "网络"
+    parent = "ops"
+    url = "/categories/网络/"
+    weight = 3
+
+  [menu.main.params]
+    icon = "fas fa-network-wired"
+
+  # ======================
+  # 工业自动化
+  # ======================
+
   [[menu.main]]
     identifier = "ind"
     name = "工业自动化"
     url = "/categories/工业自动化/"
     weight = 4
 
-  # 3. 工具类入口
-  [[menu.main]]
-    identifier = "categories"
-    name = "所有分类"
-    url = "/categories/"
-    weight = 5
-    
-  [[menu.main]]
-    identifier = "about"
-    name = "关于"
-    url = "/about/"
-    weight = 6
+  [menu.main.params]
+  icon = "fas fa-robot"
 
+  # PLC
+  [[menu.main]]
+    name = "PLC"
+    parent = "ind"
+    url = "/categories/plc/"
+    weight = 1
+
+  [menu.main.params]
+    icon = "fas fa-microchip"
+  # 变频器
+  [[menu.main]]
+    name = "变频器"
+    parent = "ind"
+    url = "/categories/变频器/"
+    weight = 3
+
+  [menu.main.params]
+    icon = "fas fa-gauge-high"
+
+  # 电工
+  [[menu.main]]
+    name = "电工"
+    parent = "ind"
+    url = "/categories/电工/"
+    weight = 2
+
+  [menu.main.params]
+    icon = "fas fa-bolt"
+
+  # ======================
+  # 所有分类
+  # ======================
+
+  [[menu.main]]
+  identifier = "categories"
+  name = "分类"
+  url = "/categories/"
+  weight = 5
+
+  [menu.main.params]
+  icon = "fas fa-folder-open"
+
+  # ======================
+  # 所有标签
+  # ======================
+
+  [[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 6
+
+  [menu.main.params]
+  icon = "fas fa-tags"
+
+  # ======================
+  # 归档
+  # ======================
+  [[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 7
+
+  [menu.main.params]
+  icon = "fas fa-box-archive"
+
+  
 # 主题核心参数（FixIt / DoIt 通用，适配科技博客）
 [params]
   # 基础信息 —— 已修复为 map 格式，解决报错
@@ -85,7 +228,7 @@ enableGitInfo = false
   enableToTop = true                       # 回到顶部按钮
   enableSearch = true                      # 开启搜索功能（科技博客必备）
   enableLightGallery = true                # 图片灯箱预览（插入技术截图方便）
-  rssLimit = 100
+  rssLimit = 20
 
   # ==================== 【2. 新增搜索配置：Lunr 搜索引擎参数】 ====================
   # 本地 Lunr 搜索，开箱即用，无需配置云端 API 
@@ -96,23 +239,30 @@ enableGitInfo = false
 
   # 首页配置（优化科技博客展示）
   [params.home]
-    subtitle = "专注技术，记录成长 | 代码改变世界"  # 首页副标题
+    subtitle = "记录每一次成长，分享每一点技术。"  # 首页副标题
     postListMode = "detailed"             # 文章卡片显示摘要+封面（推荐）
     enableFeatured = true                 # 显示置顶文章
+  [params.home.profile]
+    enable = true
+    onlyFirstPage=true
+    avatarURL = "/images/avatar.png"
+    location = "China"
+    organization = "Cyber Craftsman"
 
   # 文章页配置（提升阅读体验）
   [params.page]
     cover = true  # 确保开启封面显示（默认true，若为false则改为true）
     [params.page.toc]
       enable = true                       # 显示文章目录（长教程必备）
+      keepStatic = false
       auto = true
     [params.page.code]
       copy = true                         # 代码块复制按钮（科技博客必开）
-      maxShownLines = 30                  # 代码块默认显示行数
+      maxShownLines = 20                  # 代码块默认显示行数
 
   # 个人信息（可选，显示在首页）
   [params.profile]
-    avatar = "/images/avatar.jpg"         # 头像（放入 static/images/ 目录）
+    avatar = "/images/avatar.png"         # 头像（放入 static/images/ 目录）
     bio = "程序员 / 运维工程师 / 终身学习者"
     [params.profile.social]
       GitHub = "你的GitHubID"             # 科技博主常用社交账号

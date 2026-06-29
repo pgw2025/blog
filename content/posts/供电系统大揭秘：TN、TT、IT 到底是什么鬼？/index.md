@@ -5,7 +5,7 @@ draft: false
 math: true
 images: ["/images/post/power-system-guide.jpg"]
 tags: ["工业基础", "供电系统", "接地系统", "TN-S", "电气安全"]
-categories: ["工业自动化"]
+categories: ["工业自动化","电工"]
 series: ["工业基础知识"]
 author: "GW"
 summary: "TN-S、TN-C、TT、IT... 这些看起来像乱码的字母，决定了你触电时会不会被救命。本文将带你用最通俗的语言，看懂这些供电系统的“潜规则”，以及它们在工厂和家庭中的不同应用场景。"

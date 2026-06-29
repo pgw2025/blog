@@ -5,7 +5,7 @@ draft: false
 math: true
 images: ["/images/post/wire-spec-guide.jpg"]
 tags: ["工业基础", "电线规格", "空开匹配", "用电安全", "电工基础"]
-categories: ["工业自动化"]
+categories: ["工业自动化","电工"]
 series: ["工业基础知识"]
 author: "GW"
 summary: "电线选细了会发热起火，空开选大了起不到保护作用。本文整理了最全的电线规格、额定电流与空开（断路器）匹配表，并教你如何秒懂 BV、BVR、RVV 等复杂的电线型号。"

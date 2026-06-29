@@ -1,6 +1,5 @@
-
 ---
-title: "Linux 网络监控监听状况查询命令SS详解"
+title: "Linux SS: 网络监控监听状况查询命令详解"
 date: 2026-06-22T12:00:00+08:00
 draft: false
 tags: ["Linux", "网络配置", "运维"]

@@ -1,9 +1,9 @@
 ---
-title: "Linux 文件打包压缩工具 tar 命令详解"
+title: "Linux tar 文件打包压缩工具命令详解"
 date: 2026-06-26T10:00:00+08:00
 draft: false
 tags: ["Linux", "文件管理", "运维"]
-categories: ["运维技术"]
+categories: ["运维技术","Linux"]
 author: "Will"
 summary: "tar 是 Linux 系统中最经典的文件归档与压缩工具。本文将详细拆解 tar 命令的常用参数、不同的压缩算法对比，并提供实用的打包、解压、部分提取以及备份过滤等实战案例。"
 ---

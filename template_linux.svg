@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1600"
+    height="900"
+    viewBox="0 0 1600 900">
+
+    <defs>
+
+        <!-- Background -->
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#081426"/>
+            <stop offset="100%" stop-color="#102b52"/>
+        </linearGradient>
+
+        <!-- Accent -->
+        <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3B82F6"/>
+            <stop offset="100%" stop-color="#60A5FA"/>
+        </linearGradient>
+
+        <filter id="shadow">
+            <feDropShadow
+                dx="0"
+                dy="10"
+                stdDeviation="18"
+                flood-opacity="0.35"/>
+        </filter>
+
+    </defs>
+
+    <!-- Background -->
+
+    <rect width="1600" height="900" fill="url(#bg)"/>
+
+    <!-- Decorative circles -->
+
+    <circle cx="1400" cy="150" r="280"
+            fill="#1E3A8A"
+            opacity="0.18"/>
+
+    <circle cx="1350" cy="700" r="220"
+            fill="#2563EB"
+            opacity="0.15"/>
+
+    <!-- Grid -->
+
+    <g opacity="0.08">
+
+        <path d="M0 100H1600"/>
+        <path d="M0 200H1600"/>
+        <path d="M0 300H1600"/>
+        <path d="M0 400H1600"/>
+        <path d="M0 500H1600"/>
+        <path d="M0 600H1600"/>
+        <path d="M0 700H1600"/>
+        <path d="M0 800H1600"/>
+
+        <path d="M100 0V900"/>
+        <path d="M300 0V900"/>
+        <path d="M500 0V900"/>
+        <path d="M700 0V900"/>
+        <path d="M900 0V900"/>
+        <path d="M1100 0V900"/>
+        <path d="M1300 0V900"/>
+        <path d="M1500 0V900"/>
+
+    </g>
+
+    <!-- Title -->
+
+    <text
+        id="title"
+        x="120"
+        y="220"
+        font-size="86"
+        font-family="Segoe UI,Arial,sans-serif"
+        font-weight="700"
+        fill="white">
+
+        {TITLE_LINE_1}
+
+    </text>
+
+    <!-- Subtitle -->
+
+    <text
+        x="120"
+        y="285"
+        font-size="34"
+        font-family="Segoe UI,Arial,sans-serif"
+        fill="#93C5FD">
+
+        {TITLE_LINE_2}
+
+    </text>
+
+    <!-- Accent line -->
+
+    <rect
+        x="120"
+        y="320"
+        width="320"
+        height="8"
+        rx="4"
+        fill="url(#accent)"/>
+
+    <!-- Terminal -->
+
+    <g filter="url(#shadow)">
+
+        <rect
+            x="880"
+            y="170"
+            width="560"
+            height="420"
+            rx="18"
+            fill="#0F172A"/>
+
+        <!-- Title bar -->
+
+        <rect
+            x="880"
+            y="170"
+            width="560"
+            height="52"
+            rx="18"
+            fill="#1E293B"/>
+
+        <circle cx="915" cy="196" r="8" fill="#EF4444"/>
+        <circle cx="945" cy="196" r="8" fill="#F59E0B"/>
+        <circle cx="975" cy="196" r="8" fill="#22C55E"/>
+
+        <!-- Commands -->
+
+        <g
+            font-size="28"
+            font-family="Consolas,monospace">
+
+            <text x="920" y="280" fill="#22C55E">$ uname -a</text>
+            <text x="920" y="330" fill="#E2E8F0">Linux 6.x</text>
+
+            <text x="920" y="390" fill="#22C55E">$ ls -lah</text>
+            <text x="920" y="440" fill="#CBD5E1">Documents  Downloads</text>
+
+            <text x="920" y="500" fill="#22C55E">$ systemctl status</text>
+
+        </g>
+
+    </g>
+
+    <!-- Feature cards -->
+
+    <g>
+
+        <rect x="120" y="520"
+              width="180"
+              height="90"
+              rx="18"
+              fill="#13294B"/>
+
+        <text
+            x="160"
+            y="575"
+            font-size="34"
+            fill="#60A5FA">></text>
+
+        <text
+            x="205"
+            y="575"
+            font-size="28"
+            fill="white">Shell</text>
+
+        <rect x="340" y="520"
+              width="180"
+              height="90"
+              rx="18"
+              fill="#13294B"/>
+
+        <text
+            x="385"
+            y="575"
+            font-size="34"
+            fill="#60A5FA">⚙</text>
+
+        <text
+            x="430"
+            y="575"
+            font-size="28"
+            fill="white">System</text>
+
+        <rect x="560" y="520"
+              width="180"
+              height="90"
+              rx="18"
+              fill="#13294B"/>
+
+        <text
+            x="605"
+            y="575"
+            font-size="34"
+            fill="#60A5FA">📁</text>
+
+        <text
+            x="650"
+            y="575"
+            font-size="28"
+            fill="white">Files</text>
+
+    </g>
+
+    <!-- Bottom labels -->
+
+    <text
+        x="120"
+        y="760"
+        font-size="28"
+        fill="#94A3B8">
+
+        Bash · Network · Docker · Git · SSH · Vim
+
+    </text>
+
+    <!-- Decorative lines -->
+
+    <path
+        d="M1200 720
+           C1280 680
+            1360 760
+            1460 710"
+        stroke="#3B82F6"
+        stroke-width="4"
+        fill="none"
+        opacity="0.5"/>
+
+    <path
+        d="M1150 760
+           C1250 720
+            1350 820
+            1500 760"
+        stroke="#60A5FA"
+        stroke-width="2"
+        fill="none"
+        opacity="0.3"/>
+
+</svg>

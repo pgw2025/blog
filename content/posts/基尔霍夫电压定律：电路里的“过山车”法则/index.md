@@ -5,7 +5,7 @@ draft: false
 math: true
 images: ["/images/post/kvl-guide.jpg"]
 tags: ["工业自动化", "电工基础", "基尔霍夫定律", "KVL", "故障排查"]
-categories: ["工业自动化"]
+categories: ["工业自动化","电工"]
 series: ["工业自动化入门"]
 author: "GW"
 summary: "如果说欧姆定律是管好一个元件的“单兵作战”，那么基尔霍夫电压定律 (KVL) 就是统领全局的“环路法则”。为什么供电 24V 到设备只剩 18V？本文将带你用“过山车”的视角，看透电路中电压分配的终极秘密。"

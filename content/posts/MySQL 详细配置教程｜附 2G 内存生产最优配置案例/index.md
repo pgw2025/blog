@@ -7,7 +7,7 @@ draft: false
 author: GW
 cover: 
 tags: ["MySQL", "数据库", "服务器配置", "性能调优"]
-categories: ["运维技术", "服务器"]
+categories: ["运维技术", "MySQL"]
 toc: true
 comment: true
 ---

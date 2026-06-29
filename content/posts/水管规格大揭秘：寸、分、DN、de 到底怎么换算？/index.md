@@ -4,7 +4,7 @@ date: 2026-05-30T14:58:00+08:00
 draft: false
 images: ["/images/post/pipe-sizes-guide.jpg"]
 tags: ["工业基础", "水管规格", "尺寸换算", "PPR", "PVC", "PE"]
-categories: ["工业自动化"]
+categories: ["工业自动化","电工"]
 series: ["工业基础知识"]
 author: "GW"
 summary: "在工业现场或家庭装修中，经常听到 4 分管、6 分管、DN25、de32 等说法，听得云里雾里。本文将带你彻底理清英制与公制换算逻辑，并详细对比 PPR、PVC、PE 三种主流管材的尺寸定义差异。"

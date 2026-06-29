@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1920"
+     height="1080"
+     viewBox="0 0 1920 1080">
+
+    <defs>
+
+        <!-- 背景渐变 -->
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#071A2D"/>
+            <stop offset="50%" stop-color="#0C2948"/>
+            <stop offset="100%" stop-color="#020B18"/>
+        </linearGradient>
+
+        <!-- 科技蓝 -->
+        <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#00F5FF"/>
+            <stop offset="100%" stop-color="#008CFF"/>
+        </linearGradient>
+
+        <!-- 发光 -->
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- 网格 -->
+        <pattern id="grid"
+                 width="80"
+                 height="80"
+                 patternUnits="userSpaceOnUse">
+            <path d="M80 0H0V80"
+                  fill="none"
+                  stroke="#1d5b87"
+                  stroke-width="1"
+                  opacity="0.25"/>
+        </pattern>
+
+    </defs>
+
+    <!-- 背景 -->
+    <rect width="1920"
+          height="1080"
+          fill="url(#bg)"/>
+
+    <!-- 网格 -->
+    <rect width="1920"
+          height="1080"
+          fill="url(#grid)"/>
+
+    <!-- 左上装饰 -->
+    <circle cx="260"
+            cy="220"
+            r="180"
+            fill="none"
+            stroke="url(#cyan)"
+            stroke-width="2"
+            opacity="0.25"/>
+
+    <circle cx="260"
+            cy="220"
+            r="120"
+            fill="none"
+            stroke="#00F5FF"
+            stroke-width="1"
+            opacity="0.4"/>
+
+    <!-- 右下圆 -->
+    <circle cx="1650"
+            cy="820"
+            r="220"
+            fill="none"
+            stroke="url(#cyan)"
+            stroke-width="2"
+            opacity="0.2"/>
+
+    <circle cx="1650"
+            cy="820"
+            r="140"
+            fill="none"
+            stroke="#00F5FF"
+            stroke-width="1"
+            opacity="0.35"/>
+
+    <!-- 科技线 -->
+    <line x1="0"
+          y1="760"
+          x2="1920"
+          y2="760"
+          stroke="#00F5FF"
+          stroke-width="2"
+          opacity="0.15"/>
+
+    <line x1="0"
+          y1="770"
+          x2="1920"
+          y2="770"
+          stroke="#00F5FF"
+          stroke-width="1"
+          opacity="0.08"/>
+
+    <!-- 中间发光线 -->
+    <line x1="360"
+          y1="540"
+          x2="1560"
+          y2="540"
+          stroke="url(#cyan)"
+          stroke-width="4"
+          filter="url(#glow)"
+          opacity="0.75"/>
+
+    <!-- 科技矩形 -->
+    <rect x="340"
+          y="280"
+          width="1240"
+          height="500"
+          rx="18"
+          fill="none"
+          stroke="url(#cyan)"
+          stroke-width="2"
+          opacity="0.45"/>
+
+    <!-- 左侧竖线 -->
+    <line x1="390"
+          y1="320"
+          x2="390"
+          y2="740"
+          stroke="#00F5FF"
+          stroke-width="2"
+          opacity="0.5"/>
+
+    <!-- 标题 -->
+    <text x="450"
+          y="470"
+          font-size="84"
+          font-family="Arial, Helvetica, sans-serif"
+          fill="#FFFFFF"
+          font-weight="700"
+          letter-spacing="3">
+
+        {TITLE_LINE_1}
+
+    </text>
+
+    <!-- 副标题 -->
+    <text x="455"
+          y="555"
+          font-size="34"
+          font-family="Arial, Helvetica, sans-serif"
+          fill="#8EDCFF"
+          letter-spacing="5">
+
+        {TITLE_LINE_2}
+
+    </text>
+
+    <!-- 底部标签 -->
+    <rect x="450"
+          y="640"
+          width="220"
+          height="56"
+          rx="28"
+          fill="url(#cyan)"
+          opacity="0.85"/>
+
+    <text x="490"
+          y="678"
+          font-size="28"
+          font-family="Arial, Helvetica, sans-serif"
+          fill="#001B2B"
+          font-weight="700">
+
+        TECH BLOG
+
+    </text>
+
+    <!-- 左上角小装饰 -->
+    <line x1="90"
+          y1="90"
+          x2="240"
+          y2="90"
+          stroke="#00F5FF"
+          stroke-width="3"/>
+
+    <line x1="90"
+          y1="90"
+          x2="90"
+          y2="240"
+          stroke="#00F5FF"
+          stroke-width="3"/>
+
+    <!-- 右下角 -->
+    <line x1="1830"
+          y1="990"
+          x2="1680"
+          y2="990"
+          stroke="#00F5FF"
+          stroke-width="3"/>
+
+    <line x1="1830"
+          y1="990"
+          x2="1830"
+          y2="840"
+          stroke="#00F5FF"
+          stroke-width="3"/>
+
+</svg>

@@ -3,7 +3,7 @@ title: "Wireshark 过滤器全攻略：从基础语法到高级排查实战"
 date: 2026-06-22T10:00:00+08:00
 draft: false
 tags: ["Wireshark", "网络分析", "运维", "抓包", "Troubleshooting"]
-categories: ["运维技术"]
+categories: ["运维技术","网络"]
 author: "Will"
 summary: "网络故障排查无从下手？Wireshark 过滤器是你的“手术刀”。本文全面总结了常用协议过滤规则，并提供多个实战场景下的排查技巧，助你快速定位网络瓶颈。"
 ---

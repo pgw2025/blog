@@ -5,7 +5,7 @@ draft: false
 math: true
 images: ["/images/post/kcl-guide.jpg"]
 tags: ["工业自动化", "电工基础", "基尔霍夫定律", "KCL", "节点分析"]
-categories: ["工业自动化"]
+categories: ["工业自动化","电工"]
 series: ["工业自动化入门"]
 author: "GW"
 summary: "在一个十字路口，开进去的车和开出来的车一定相等。基尔霍夫电流定律 (KCL) 告诉我们，电路里的“节点”也是如此。本文将带你用“水流”和“交通”的直观视角，彻底掌握这个处理复杂接线难题的逻辑神技。"

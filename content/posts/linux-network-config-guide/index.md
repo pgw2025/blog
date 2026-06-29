@@ -1,5 +1,5 @@
 ---
-title: "Linux 网络配置全攻略：手动设置 IP、子网掩码与网关"
+title: "Linux 网络配置全攻略 手动设置 IP、子网掩码与网关"
 date: 2026-06-03T12:00:00+08:00
 draft: false
 tags: ["Linux", "网络配置", "运维", "IP设置"]
